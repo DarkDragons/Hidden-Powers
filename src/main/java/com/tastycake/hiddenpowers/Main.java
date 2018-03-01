@@ -1,7 +1,7 @@
-package com.tastycake.obsidianstuff;
+package com.tastycake.hiddenpowers;
 
-import com.tastycake.obsidianstuff.proxy.CommonProxy;
-import com.tastycake.obsidianstuff.utils.Utils;
+import com.tastycake.hiddenpowers.proxy.CommonProxy;
+import com.tastycake.hiddenpowers.utils.Utils;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.SidedProxy;

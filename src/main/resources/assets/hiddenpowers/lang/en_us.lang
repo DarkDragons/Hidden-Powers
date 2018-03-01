@@ -1,0 +1,12 @@
+# Obsidian Ingots
+item.obsidian_ingot_0.name=Obsidian Ingot
+item.obsidian_ingot_1.name=Single Compressed Obsidian Ingot
+item.obsidian_ingot_2.name=Double Compressed Obsidian Ingot
+item.obsidian_ingot_3.name=Triple Compressed Obsidian Ingot
+item.obsidian_ingot_4.name=Quadruple Compressed Obsidian Ingot
+
+# Obsidian Blocks
+tile.obsidian_block_1.name=Single Compressed Obsidian
+tile.obsidian_block_2.name=Double Compressed Obsidian
+tile.obsidian_block_3.name=Triple Compressed Obsidian
+tile.obsidian_block_4.name=Quadruple Compressed Obsidian

@@ -1,6 +1,6 @@
-package com.tastycake.obsidianstuff.utils;
+package com.tastycake.hiddenpowers.utils;
 
-import com.tastycake.obsidianstuff.Reference;
+import com.tastycake.hiddenpowers.Reference;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
