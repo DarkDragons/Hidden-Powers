@@ -10,3 +10,6 @@ tile.obsidian_block_1.name=Single Compressed Obsidian
 tile.obsidian_block_2.name=Double Compressed Obsidian
 tile.obsidian_block_3.name=Triple Compressed Obsidian
 tile.obsidian_block_4.name=Quadruple Compressed Obsidian
+
+# Singularity
+tile.singularity_block.name=Singularity

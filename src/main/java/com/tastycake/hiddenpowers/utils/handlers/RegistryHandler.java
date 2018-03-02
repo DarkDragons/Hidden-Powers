@@ -3,6 +3,7 @@ package com.tastycake.hiddenpowers.utils.handlers;
 import com.tastycake.hiddenpowers.init.ModBlocks;
 import com.tastycake.hiddenpowers.init.ModItems;
 import com.tastycake.hiddenpowers.utils.IHasModel;
+import com.tastycake.hiddenpowers.utils.Utils;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
