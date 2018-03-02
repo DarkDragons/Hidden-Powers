@@ -1,0 +1,8 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "hiddenpowers:obsidian_block_3"
+    },
+    "result": "hiddenpowers:obsidian_ingot_3",
+    "experience": 2
+}

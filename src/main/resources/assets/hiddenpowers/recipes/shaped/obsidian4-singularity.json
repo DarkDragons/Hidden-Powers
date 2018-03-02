@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+	"pattern":
+	[
+		"OOO",
+		"OOO",
+		"OOO"
+	],
+	"key":
+	{
+		"O":
+		{
+			"item": "hiddenpowers:obsidian_block_4"
+		}
+    },
+
+	"result":
+	{
+		"item": "hiddenpowers:singularity_block",
+		"count": 1
+	}
+}
