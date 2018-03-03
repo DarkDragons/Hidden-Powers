@@ -13,3 +13,7 @@ tile.obsidian_block_4.name=Quadruple Compressed Obsidian
 
 # Singularity
 tile.singularity_block.name=Singularity
+
+# Magic!
+item.soul_stealer.name=Soul Stealer
+item.heart.name=Heart

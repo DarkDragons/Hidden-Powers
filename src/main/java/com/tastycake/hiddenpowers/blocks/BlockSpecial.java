@@ -10,15 +10,9 @@ import java.util.List;
 
 public class BlockSpecial extends BlockBase {
 
-    public BlockSpecial(String name, Material material, CreativeTabs tab, SoundType sound, float hardness, float resistance, String tool, int lvl, boolean unbreakable) {
+    public BlockSpecial(String name, Material material, CreativeTabs tab, SoundType sound, float hardness, float resistance, String tool, int lvl, float lightLvl) {
         super(name, material, tab, sound, hardness, resistance, tool, lvl);
 
-        setHardness(hardness);
-        setResistance(resistance);
-        setLightLevel(18.0F);
-
-        if (unbreakable == true) {
-            setBlockUnbreakable();
-        }
+        setLightLevel(lightLvl);
     }
 }

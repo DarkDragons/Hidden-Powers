@@ -21,6 +21,8 @@ public class BlockBase extends Block implements IHasModel {
         setCreativeTab(tab);
         setHarvestLevel(tool, lvl);
         setSoundType(sound);
+        setHardness(hardness);
+        setResistance(resistance);
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

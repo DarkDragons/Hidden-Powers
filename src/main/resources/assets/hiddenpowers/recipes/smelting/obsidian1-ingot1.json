@@ -4,5 +4,6 @@
         "item": "hiddenpowers:obsidian_block_1"
     },
     "result": "hiddenpowers:obsidian_ingot_1",
-    "experience": 1.5
+    "experience": 1.5,
+    "cookingtime": 60
 }
