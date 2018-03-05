@@ -1,9 +1,0 @@
-{
-    "type": "smelting",
-    "ingredient": {
-        "item": "minecraft:obsidian"
-    },
-    "result": "hiddenpowers:obsidian_ingot_0",
-    "experience": 1.25,
-    "cookingtime": 60
-}

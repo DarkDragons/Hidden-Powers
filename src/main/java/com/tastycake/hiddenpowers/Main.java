@@ -1,7 +1,9 @@
 package com.tastycake.hiddenpowers;
 
+import com.tastycake.hiddenpowers.init.ModSmelting;
 import com.tastycake.hiddenpowers.proxy.CommonProxy;
 import com.tastycake.hiddenpowers.utils.Utils;
+import com.tastycake.hiddenpowers.utils.handlers.EventHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -39,6 +41,12 @@ public class Main {
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent event) {
         Utils.log().info("Initialization");
+
+        Utils.log().info("Registering Recipes...");
+        ModSmelting.register();
+
+        Utils.log().info("Registering Events...");
+        EventHandler.register();
     }
 
     @Mod.EventHandler

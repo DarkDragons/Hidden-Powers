@@ -11,9 +11,13 @@ tile.obsidian_block_2.name=Double Compressed Obsidian
 tile.obsidian_block_3.name=Triple Compressed Obsidian
 tile.obsidian_block_4.name=Quadruple Compressed Obsidian
 
-# Singularity
-tile.singularity_block.name=Singularity
-
 # Magic!
 item.soul_stealer.name=Soul Stealer
-item.heart.name=Heart
+item.void_dagger.name=Dagger of the Void
+
+# Primordial
+item.primordial_flame.name=Primordial Flame
+item.primordial_energy.name=Primordial Energy
+item.primordial_water.name=Water
+item.primordial_void.name=Primordial Void
+item.primordial_soul.name=Purified Soul
