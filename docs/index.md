@@ -1,33 +1,28 @@
 # Hidden Powers
 
-Hidden Powers is a mod that adds compressed obsidian that goes until it is compressed four times and then you can craft a singularity. A singularity is a point where matter is infinitly dense. Unfortunatly, I cannot make this a small circle. I will soon add tools, weapons and armor to go along with everything else.
+Hidden Powers is a mod that adds "Primordial Particles" such as Water, Energy, Flame, Void and Soul.
+
+## Important Notes
+
+* **WARNING** I might change the unlocalized/registry names of items/blocks so it is recommended to make a backup before updating
+* Not all crafting recipes implemented
+* Soon there will be tools, weapons and armor to go along with everything else
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine so you can build the mod or mess around with the source. **Any modifications made to the source are for PERSONAL use ONLY**
+-- If you would like to use the mod in Minecraft then download the version you would like in the builds folder.
+
+-- If you would like to mess around with the source then follow the instructions below
+
+**Any modifications made to the source are for PERSONAL use ONLY**
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What you need to setup a development environment
 
 ```
-What Here
-```
-
-### Building the source
-
-These are the steps you must follow to build the source
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+* IntellijIDEA (Other IDEs can be used but I do not provide support for them)
+* Java JDK 8 (Latest Version)
 ```
 
 ### Setting up a dev environment with IntellijIDEA
@@ -52,4 +47,5 @@ See [LICENSE.md](LICENSE.md)
 
 ## Acknowledgments
 
-* Thank you [Loremaster](https://www.youtube.com/channel/UC3n-lKS-MYlunVtErgzSFZg) for making amazing tutorials!
+* A special thanks to [Loremaster](https://www.youtube.com/channel/UC3n-lKS-MYlunVtErgzSFZg) for making such amazing tutorials!
+* Thank you to all the amazing people on the Minecraft Forge Forums
