@@ -8,7 +8,7 @@ public class Reference {
     public static final String
             MODID = "hiddenpowers",
             NAME = "Hidden Powers",
-            DESC = "To Be Added...",
+            DESC = "Primordial Particles and Expensive, OP Weapons",
             CREDITS = "Thank you Loremaster for your amazing tutorials",
             VERSION = "1.0",
             ACCEPTED_VERSIONS = "1.12.2";
