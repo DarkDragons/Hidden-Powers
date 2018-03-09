@@ -1,4 +1,4 @@
-package com.tastycake.hiddenpowers.items;
+package com.tastycake.hiddenpowers.tools;
 
 import com.google.common.collect.Sets;
 import com.tastycake.hiddenpowers.Main;
@@ -11,9 +11,9 @@ import net.minecraftforge.common.util.EnumHelper;
 
 import java.util.Set;
 
-public class ItemToolBase extends ItemTool implements IHasModel {
+public class ToolBase extends ItemTool implements IHasModel {
 
-    public ItemToolBase(String name, CreativeTabs tab, int durablility, int damage) {
+    public ToolBase(String name, CreativeTabs tab, int durablility, int damage) {
         super(EnumHelper.addToolMaterial(name + "_material", 0, durablility, 0, damage, 0), Sets.newHashSet(new Block[] {}));
 
         setUnlocalizedName(name);
