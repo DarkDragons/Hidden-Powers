@@ -43,7 +43,7 @@ until finished
 
 ## License
 
-See [LICENSE.md](LICENSE.md)
+See [LICENSE.md](https://github.com/DarkDragons/Hidden-Powers/blob/master/LICENSE.md)
 
 ## Acknowledgments
 
