@@ -11,6 +11,27 @@ tile.obsidian_block_2.name=Double Compressed Obsidian
 tile.obsidian_block_3.name=Triple Compressed Obsidian
 tile.obsidian_block_4.name=Quadruple Compressed Obsidian
 
+# Obsidian Pickaxes
+item.obsidian_pickaxe_0.name=Obsidian Pickaxe
+item.obsidian_pickaxe_1.name=Single Compressed Obsidian Pickaxe
+item.obsidian_pickaxe_2.name=Double Compressed Obsidian Pickaxe
+item.obsidian_pickaxe_3.name=Triple Compressed Obsidian Pickaxe
+item.obsidian_pickaxe_4.name=Quadruple Compressed Obsidian Pickaxe
+
+# Obsidian Pickaxes
+item.obsidian_axe_0.name=Obsidian Axe
+item.obsidian_axe_1.name=Single Compressed Obsidian Axe
+item.obsidian_axe_2.name=Double Compressed Obsidian Axe
+item.obsidian_axe_3.name=Triple Compressed Obsidian Axe
+item.obsidian_axe_4.name=Quadruple Compressed Obsidian Axe
+
+# Obsidian Pickaxes
+item.obsidian_shovel_0.name=Obsidian Shovel
+item.obsidian_shovel_1.name=Single Compressed Obsidian Shovel
+item.obsidian_shovel_2.name=Double Compressed Obsidian Shovel
+item.obsidian_shovel_3.name=Triple Compressed Obsidian Shovel
+item.obsidian_shovel_4.name=Quadruple Compressed Obsidian Shovel
+
 # Magic!
 item.soul_stealer.name=Soul Stealer
 item.void_dagger.name=Dagger of the Void

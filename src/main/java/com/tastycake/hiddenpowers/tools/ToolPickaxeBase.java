@@ -1,4 +1,4 @@
-package com.tastycake.hiddenpowers.tools.obsidian;
+package com.tastycake.hiddenpowers.tools;
 
 import com.tastycake.hiddenpowers.Main;
 import com.tastycake.hiddenpowers.init.ModTools;
@@ -9,7 +9,7 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class ToolPickaxeBase extends ItemPickaxe implements IHasModel {
 
-    public ToolPickaxeBase(String name, CreativeTabs tab, int lvl, int durablility, int speed, int damage, int enchantability) {
+    public ToolPickaxeBase(String name, CreativeTabs tab, int lvl, int durablility, int speed, float damage, int enchantability) {
         super(EnumHelper.addToolMaterial(name + "_material", lvl, durablility, speed, damage, enchantability));
 
         setUnlocalizedName(name);

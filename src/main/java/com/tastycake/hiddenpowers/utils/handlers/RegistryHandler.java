@@ -43,7 +43,7 @@ public class RegistryHandler {
             }
         }
 
-        for (ItemTool item : ModTools.TOOLS) {
+        for (Item item : ModTools.TOOLS) {
             if (item instanceof IHasModel) {
                 ((IHasModel)item).registerModels();
             }
