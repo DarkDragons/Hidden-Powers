@@ -1,6 +1,7 @@
 package com.tastycake.hiddenpowers.events;
 
 import com.tastycake.hiddenpowers.init.ModItems;
+import com.tastycake.hiddenpowers.init.ModTools;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -18,7 +19,7 @@ public class EventVoidDagger {
             EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
             Random r = new Random();
 
-            if (player.getHeldItemMainhand().getItem() == ModItems.VOID_DAGGER) {
+            if (player.getHeldItemMainhand().getItem() == ModTools.VOID_DAGGER) {
                 event.getEntity().setDead();
 
                 if (r.nextInt(4) == 1) {

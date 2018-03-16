@@ -1,4 +1,4 @@
-package com.tastycake.hiddenpowers.items;
+package com.tastycake.hiddenpowers.tools;
 
 import com.tastycake.hiddenpowers.tools.ToolBase;
 import net.minecraft.creativetab.CreativeTabs;
@@ -6,6 +6,6 @@ import net.minecraft.creativetab.CreativeTabs;
 public class ItemSoulStealer extends ToolBase {
 
     public ItemSoulStealer() {
-        super("soul_stealer", CreativeTabs.REDSTONE, 20, 3);
+        super("soul_stealer", 20, 3);
     }
 }

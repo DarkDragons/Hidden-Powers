@@ -18,4 +18,7 @@ public class Reference {
     public static final String CLIENT_PROXY_CLASS = "com.tastycake.hiddenpowers.proxy.ClientProxy";
     public static final String COMMON_PROXY_CLASS = "com.tastycake.hiddenpowers.proxy.CommonProxy";
     //public static final String SERVER_PROXY_CLASS = "com.tastycake.obsidianstuff";
+
+    // Other
+
 }

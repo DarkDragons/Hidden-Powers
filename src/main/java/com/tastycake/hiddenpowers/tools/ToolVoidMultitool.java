@@ -2,6 +2,7 @@ package com.tastycake.hiddenpowers.tools;
 
 import com.google.common.collect.Sets;
 import com.tastycake.hiddenpowers.Main;
+import com.tastycake.hiddenpowers.init.ModItems;
 import com.tastycake.hiddenpowers.init.ModTools;
 import com.tastycake.hiddenpowers.utils.IHasModel;
 import net.minecraft.block.Block;
@@ -9,17 +10,17 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemTool;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ToolBase extends ItemTool implements IHasModel {
+public class ToolVoidMultitool extends ItemTool implements IHasModel {
 
-    public ToolBase(String name, int durablility, int damage) {
-        super(EnumHelper.addToolMaterial(name + "_material", 0, durablility, 0, damage, 0), Sets.newHashSet(new Block[] {}));
+    public ToolVoidMultitool() {
+        super(EnumHelper.addToolMaterial("void_multitool_material", 0, -1, 0, 0, 0), Sets.newHashSet(new Block[] {}));
 
-        setUnlocalizedName(name);
-        setRegistryName(name);
+        setUnlocalizedName("void_multitool");
+        setRegistryName("name");
         setCreativeTab(CreativeTabs.REDSTONE);
 
-        //register(this);
         ModTools.TOOLS.add(this);
+        //register(this);
     }
 
     @Override
