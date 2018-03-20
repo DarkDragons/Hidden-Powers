@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:bedrock"
+    },
+    "S":
+    {
+      "item": "hiddenpowers:primordial_soul"
+    }
+  },
+
+  "result":
+  {
+    "item": "hiddenpowers:primordial_void",
+    "count": 1
+  }
+}

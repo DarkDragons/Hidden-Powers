@@ -1,8 +1,6 @@
 package com.tastycake.hiddenpowers.init;
 
 import com.tastycake.hiddenpowers.items.*;
-import com.tastycake.hiddenpowers.tools.ItemSoulStealer;
-import com.tastycake.hiddenpowers.tools.ItemVoidDagger;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 

@@ -15,7 +15,7 @@ public class Config {
     private static final String CATEGORY_TOOL = "tool";
 
     // This values below you can access elsewhere in your mod:
-    public static String yourRealName = "Steve";
+    public static String yourName = "Steve";
     public static boolean enableSoulStealerProp = true;
     public static boolean enableVoidDaggerProp = true;
     public static boolean enableVoidMultitoolProp = true;
@@ -40,7 +40,7 @@ public class Config {
     public static void initGeneralConfig(Configuration cfg) {
         cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General Configuration   |   Everything Requires Restart");
 
-        yourRealName = cfg.getString("realName", CATEGORY_GENERAL, yourRealName, "Set your real name here");
+        yourName = cfg.getString("realName", CATEGORY_GENERAL, yourName, "Set your real name here");
     }
 
     public static void initToolConfig(Configuration cfg) {

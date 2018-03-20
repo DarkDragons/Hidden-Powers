@@ -34,11 +34,11 @@ item.obsidian_shovel_4.name=Quadruple Compressed Obsidian Shovel
 
 # Magic!
 item.soul_stealer.name=Soul Stealer
-item.void_dagger.name=Dagger of the Void
+item.void_multitool.name=Void Staff
 
 # Primordial
 item.primordial_flame.name=Primordial Flame
 item.primordial_energy.name=Primordial Energy
-item.primordial_water.name=Water
+item.primordial_water.name=Purified Water
 item.primordial_void.name=Primordial Void
 item.primordial_soul.name=Purified Soul

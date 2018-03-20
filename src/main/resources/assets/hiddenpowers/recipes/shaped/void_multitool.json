@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "VVV",
+    " DV",
+    "D V"
+  ],
+
+  "key":
+  {
+    "V":
+    {
+      "item": "hiddenpowers:primordial_void"
+    },
+    "D":
+    {
+      "item": "minecraft:diamond"
+    }
+  },
+
+  "result":
+  {
+    "item": "hiddenpowers:primordial_void",
+    "count": 1
+  }
+}

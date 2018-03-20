@@ -1,5 +1,7 @@
 package com.tastycake.hiddenpowers;
 
+import com.tastycake.hiddenpowers.commands.CommandDimensionTP;
+import com.tastycake.hiddenpowers.commands.CommandHeal;
 import com.tastycake.hiddenpowers.init.ModSmelting;
 import com.tastycake.hiddenpowers.proxy.CommonProxy;
 import com.tastycake.hiddenpowers.utils.Utils;
@@ -10,6 +12,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
 @Mod(
         modid = Reference.MODID,
@@ -59,11 +62,20 @@ public class Main {
     public static void PostInit(FMLPostInitializationEvent event) {
         Utils.log().info("Post Initialization");
 
-        boolean x = true;
-        if (x == true) {}
-
-
         Utils.log().info("Loading Config PostInit...");
         Config.PostInit(event);
+    }
+
+    @Mod.EventHandler
+    public void serverStart(FMLServerStartingEvent event)
+    {
+        Utils.log().info("Server Starting");
+
+        Utils.log().info("Registering Server Commands...");
+
+        Utils.log().info("Registered Command > CommandHeal");
+        event.registerServerCommand(new CommandHeal());
+        Utils.log().info("Registered Command > CommandDimensionTP");
+        event.registerServerCommand(new CommandDimensionTP());
     }
 }

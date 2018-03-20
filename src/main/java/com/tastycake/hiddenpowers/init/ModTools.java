@@ -6,7 +6,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemTool;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class ModTools {
@@ -44,7 +43,6 @@ public class ModTools {
         // Shovels
 
         // Special
-        public static final ToolVoidMultitool VOID_MULTITOOL = new ToolVoidMultitool();
         public static final ItemTool SOUL_STEALER = new ItemSoulStealer();
-        public static final ItemTool VOID_DAGGER = new ItemVoidDagger();
+        public static final ItemTool VOID_MULTITOOL = new ItemVoidMultitool();
 }

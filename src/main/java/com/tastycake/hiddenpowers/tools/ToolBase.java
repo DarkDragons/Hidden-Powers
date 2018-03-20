@@ -6,8 +6,12 @@ import com.tastycake.hiddenpowers.init.ModTools;
 import com.tastycake.hiddenpowers.utils.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraftforge.common.util.EnumHelper;
+
+import java.util.List;
 
 public class ToolBase extends ItemTool implements IHasModel {
 
