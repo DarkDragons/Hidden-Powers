@@ -1,0 +1,26 @@
+package com.warpedreality.lostpowers.tools;
+
+import com.warpedreality.lostpowers.Main;
+import com.warpedreality.lostpowers.init.ModTools;
+import com.warpedreality.lostpowers.utils.IHasModel;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraftforge.common.util.EnumHelper;
+
+public class ToolPickaxeBase extends ItemPickaxe implements IHasModel {
+
+    public ToolPickaxeBase(String name, CreativeTabs tab, int lvl, int durablility, int speed, float damage, int enchantability) {
+        super(EnumHelper.addToolMaterial(name + "_material", lvl, durablility, speed, damage, enchantability));
+
+        setUnlocalizedName(name);
+        setRegistryName(name);
+        setCreativeTab(CreativeTabs.REDSTONE);
+
+        ModTools.TOOLS.add(this);
+    }
+
+    @Override
+    public void registerModels() {
+        Main.proxy.registerItemRenderer(this, 0, "inventory");
+    }
+}

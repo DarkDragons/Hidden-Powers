@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+	"pattern":
+	[
+		"OOO",
+		"OOO",
+		"OOO"
+	],
+	"key":
+	{
+		"O":
+		{
+			"item": "lostpowers:obsidian_block_3"
+		}
+    },
+
+	"result":
+	{
+		"item": "lostpowers:obsidian_block_4",
+		"count": 1
+	}
+}

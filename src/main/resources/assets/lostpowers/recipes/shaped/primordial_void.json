@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:bedrock"
+    }
+  },
+
+  "result":
+  {
+    "item": "lostpowers:primordial_void",
+    "count": 1
+  }
+}

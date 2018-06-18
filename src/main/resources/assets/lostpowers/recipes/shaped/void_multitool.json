@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " VV",
+    " BV",
+    "B  "
+  ],
+
+  "key":
+  {
+    "V":
+    {
+      "item": "lostpowers:primordial_void"
+    },
+    "B":
+    {
+      "item": "minecraft:bedrock"
+    }
+  },
+
+  "result":
+  {
+    "item": "lostpowers:void_multitool",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:bedrock"
+    },
+    "S":
+    {
+      "item": "lostpowers:primordial_soul"
+    }
+  },
+
+  "result":
+  {
+    "item": "lostpowers:soul_capsule",
+    "count": 1
+  }
+}
