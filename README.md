@@ -1,1 +1,1 @@
-hello world
+Nothing to see here. Please go to https://minecraft.curseforge.com/projects/lost-powers for more info. For use of the source code, please Google, "How to use Minecraft Forge mod source code" or something similar.
