@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+    {
+      "item": "lostpowers:obsidian_block_4"
+    }
+  ],
+
+  "result":
+  {
+    "item": "lostpowers:obsidian_block_3",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+	"pattern":
+	[
+		"OOO",
+		" D ",
+		" D "
+	],
+	"key":
+	{
+		"O":
+		{
+			"item": "minecraft:obsidian_ingot_1"
+		},
+		"D":
+		{
+			"item": "minecraft:diamond"
+		}
+    },
+
+	"result":
+	{
+		"item": "lostpowers:obsidian_pickaxe_1",
+		"count": 1
+	}
+}
