@@ -18,19 +18,33 @@ item.obsidian_pickaxe_2.name=Double Compressed Obsidian Pickaxe
 item.obsidian_pickaxe_3.name=Triple Compressed Obsidian Pickaxe
 item.obsidian_pickaxe_4.name=Quadruple Compressed Obsidian Pickaxe
 
-# Obsidian Pickaxes
+# Obsidian Axes
 item.obsidian_axe_0.name=Obsidian Axe
 item.obsidian_axe_1.name=Single Compressed Obsidian Axe
 item.obsidian_axe_2.name=Double Compressed Obsidian Axe
 item.obsidian_axe_3.name=Triple Compressed Obsidian Axe
 item.obsidian_axe_4.name=Quadruple Compressed Obsidian Axe
 
-# Obsidian Pickaxes
+# Obsidian Shovels
 item.obsidian_shovel_0.name=Obsidian Shovel
 item.obsidian_shovel_1.name=Single Compressed Obsidian Shovel
 item.obsidian_shovel_2.name=Double Compressed Obsidian Shovel
 item.obsidian_shovel_3.name=Triple Compressed Obsidian Shovel
 item.obsidian_shovel_4.name=Quadruple Compressed Obsidian Shovel
+
+# Obsidian Hoes
+item.obsidian_hoe_0.name=Obsidian Hoe
+item.obsidian_hoe_1.name=Single Compressed Obsidian Hoe
+item.obsidian_hoe_2.name=Double Compressed Obsidian Hoe
+item.obsidian_hoe_3.name=Triple Compressed Obsidian Hoe
+item.obsidian_hoe_4.name=Quadruple Compressed Obsidian Hoe
+
+# Obsidian Swords
+item.obsidian_sword_0.name=Obsidian Sword
+item.obsidian_sword_1.name=Single Compressed Obsidian Sword
+item.obsidian_sword_2.name=Double Compressed Obsidian Sword
+item.obsidian_sword_3.name=Triple Compressed Obsidian Sword
+item.obsidian_sword_4.name=Quadruple Compressed Obsidian Sword
 
 # Magic!
 item.void_multitool.name=Void Staff

@@ -9,12 +9,12 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class ToolPickaxeBase extends ItemPickaxe implements IHasModel {
 
-    public ToolPickaxeBase(String name, CreativeTabs tab, int lvl, int durablility, int speed, float damage, int enchantability) {
-        super(EnumHelper.addToolMaterial(name + "_material", lvl, durablility, speed, damage, enchantability));
+    public ToolPickaxeBase(String name, CreativeTabs tab, int lvl, int durability, int speed, float damage, int enchantability) {
+        super(EnumHelper.addToolMaterial(name + "_material", lvl, durability, speed, damage, enchantability));
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.REDSTONE);
+        setCreativeTab(tab);
 
         ModTools.TOOLS.add(this);
     }

@@ -14,7 +14,7 @@ public class ToolShovelBase extends ItemSpade implements IHasModel {
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.REDSTONE);
+        setCreativeTab(tab);
 
         ModTools.TOOLS.add(this);
     }

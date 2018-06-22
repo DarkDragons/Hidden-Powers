@@ -3,8 +3,8 @@
 
 	"pattern":
 	[
-		"OOO",
-		" D ",
+		" O ",
+		" O ",
 		" D "
 	],
 	"key":
@@ -21,7 +21,7 @@
 
 	"result":
 	{
-		"item": "lostpowers:obsidian_shovel_1",
+		"item": "lostpowers:obsidian_sword_1",
 		"count": 1
 	}
 }

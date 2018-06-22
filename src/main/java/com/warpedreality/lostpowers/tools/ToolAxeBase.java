@@ -14,7 +14,7 @@ public class ToolAxeBase extends ItemAxe implements IHasModel {
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.REDSTONE);
+        setCreativeTab(tab);
 
         ModTools.TOOLS.add(this);
     }

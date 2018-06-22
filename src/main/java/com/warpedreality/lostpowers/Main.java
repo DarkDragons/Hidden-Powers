@@ -2,10 +2,14 @@ package com.warpedreality.lostpowers;
 
 import com.warpedreality.lostpowers.commands.CommandDimensionTP;
 import com.warpedreality.lostpowers.commands.CommandHeal;
+import com.warpedreality.lostpowers.init.ModItems;
 import com.warpedreality.lostpowers.init.ModSmelting;
+import com.warpedreality.lostpowers.init.ModTools;
 import com.warpedreality.lostpowers.proxy.CommonProxy;
 import com.warpedreality.lostpowers.utils.Utils;
 import com.warpedreality.lostpowers.utils.handlers.EventHandler;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -80,4 +84,11 @@ public class Main {
         //Utils.log().info("Registered Command > CommandYourTheBoss");
         //event.registerServerCommand(new CommandYourTheBoss());
     }
+
+    public static CreativeTabs tabLostPowers = new CreativeTabs("tab_lost_powers") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(ModTools.VOID_MULTITOOL);
+        }
+    };
 }

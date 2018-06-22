@@ -1,24 +1,23 @@
 package com.warpedreality.lostpowers.tools;
 
-import com.google.common.collect.Sets;
 import com.warpedreality.lostpowers.Main;
 import com.warpedreality.lostpowers.init.ModTools;
 import com.warpedreality.lostpowers.utils.IHasModel;
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemTool;
+import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ToolBase extends ItemTool implements IHasModel {
+public class ToolSwordBase extends ItemSword implements IHasModel {
 
-    public ToolBase(String name, int durablility, int damage) {
-        super(EnumHelper.addToolMaterial(name + "_material", 0, durablility, 0, damage, 0), Sets.newHashSet(new Block[] {}));
+    public ToolSwordBase(String name, CreativeTabs tab, int lvl, int durability, int speed, float damage, int enchantability) {
+        super(EnumHelper.addToolMaterial(name + "_material", lvl, durability, speed, damage, enchantability));
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(Main.tabLostPowers);
+        setCreativeTab(tab);
 
-        //register(this);
         ModTools.TOOLS.add(this);
     }
 

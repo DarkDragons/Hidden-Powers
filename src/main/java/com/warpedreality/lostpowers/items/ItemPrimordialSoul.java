@@ -15,8 +15,15 @@ public class ItemPrimordialSoul extends ItemBase {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
-        if (player.getHealth() < player.getMaxHealth()) {
-            player.heal(2);
+        if (player.getHealth() < player.getMaxHealth() || player.getFoodStats().getFoodLevel() < 20) {
+            if (player.getHealth() < player.getMaxHealth()) {
+                player.heal(2);
+            }
+
+            if (player.getFoodStats().getFoodLevel() < 20) {
+                player.getFoodStats().setFoodLevel(player.getFoodStats().getFoodLevel() + 1);
+            }
+
             player.getHeldItem(hand).shrink(1);
         }
 
