@@ -26,7 +26,10 @@ public class EventVoidMultitoolBlock {
             ItemStack stack = event.getWorld().getBlockState(pos).getBlock().getPickBlock(event.getWorld().getBlockState(pos), null, event.getWorld(), pos, event.getEntityPlayer());
 
             EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), stack);
-            player.getEntityWorld().spawnEntity(item);
+
+            if (!event.getWorld().isRemote)
+                player.getEntityWorld().spawnEntity(item);
+
             event.getWorld().setBlockToAir(pos);
         }
     }

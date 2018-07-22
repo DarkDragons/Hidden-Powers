@@ -2,8 +2,13 @@ package com.warpedreality.lostpowers.events;
 
 import com.warpedreality.lostpowers.init.ModItems;
 import com.warpedreality.lostpowers.init.ModTools;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.boss.EntityDragon;
+import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -17,20 +22,28 @@ public class EventVoidMultitool {
     public void onAttackAnimal(LivingHurtEvent event) {
         if (event.getSource().getTrueSource() instanceof EntityPlayer) {
             EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
-            Random r = new Random();
 
             if (player.getHeldItemMainhand().getItem() == ModTools.VOID_MULTITOOL) {
-                BlockPos pos = event.getEntity().getPosition();
-                EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL));
-                player.getEntityWorld().spawnEntity(item);
-                event.getEntity().setDead();
-
-                /*
-                if (r.nextInt(4) == 1) {
+                if (event.getEntity() instanceof EntityWither) {
                     BlockPos pos = event.getEntity().getPosition();
-                    EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_VOID));
+                    EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.NETHER_STAR, 1));
                     player.getEntityWorld().spawnEntity(item);
-                }*/
+                    ((EntityWither) event.getEntity()).setHealth(0);
+                } else if (event.getEntity() instanceof EntityDragon) {
+                    BlockPos pos = event.getEntity().getPosition();
+                    EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.NETHER_STAR, 4));
+                    player.getEntityWorld().spawnEntity(item);
+                    ((EntityDragon) event.getEntity()).setHealth(0);
+                } else if (event.getEntity() instanceof EntityLiving){
+                    BlockPos pos = event.getEntity().getPosition();
+                    EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL, 1));
+                    player.getEntityWorld().spawnEntity(item);
+                    ((EntityLiving) event.getEntity()).setHealth(0);
+                }
+
+
+
+
             }
         }
     }
