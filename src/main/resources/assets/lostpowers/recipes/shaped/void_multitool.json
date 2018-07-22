@@ -4,8 +4,8 @@
   "pattern":
   [
     " VV",
-    " BV",
-    "B  "
+    " SV",
+    "S  "
   ],
 
   "key":
@@ -14,9 +14,9 @@
     {
       "item": "lostpowers:primordial_void"
     },
-    "B":
+    "S":
     {
-      "item": "minecraft:bedrock"
+      "item": "minecraft:nether_star"
     }
   },
 

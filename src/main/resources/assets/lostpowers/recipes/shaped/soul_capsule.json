@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    "BBB",
     "BSB",
-    "BBB"
+    "SPS",
+    "BSB"
   ],
 
   "key":
@@ -14,9 +14,13 @@
     {
       "item": "minecraft:bedrock"
     },
-    "S":
+    "P":
     {
       "item": "lostpowers:primordial_soul"
+    },
+    "S":
+    {
+      "item": "minecraft:nether_star"
     }
   },
 

@@ -4,7 +4,7 @@
   "pattern":
   [
     "BBB",
-    "BBB",
+    "BSB",
     "BBB"
   ],
 
@@ -13,6 +13,10 @@
     "B":
     {
       "item": "minecraft:bedrock"
+    },
+    "S":
+    {
+      "item": "minecraft:nether_star"
     }
   },
 
