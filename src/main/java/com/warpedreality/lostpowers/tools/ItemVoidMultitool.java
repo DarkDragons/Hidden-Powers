@@ -14,12 +14,5 @@ import java.util.List;
 public class ItemVoidMultitool extends ToolBase {
     public ItemVoidMultitool() {
         super("void_multitool", -1, 0);
-        EntityPlayer player = Minecraft.getMinecraft().player;
-        onEntitySwing(player, new ItemStack(this));
-    }
-
-    @SideOnly(Side.CLIENT)
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-        //tooltip.add("You are " + yourName);
     }
 }
