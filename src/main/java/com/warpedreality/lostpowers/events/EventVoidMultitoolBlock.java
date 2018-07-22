@@ -4,6 +4,7 @@ import com.warpedreality.lostpowers.init.ModItems;
 import com.warpedreality.lostpowers.init.ModTools;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -22,7 +23,9 @@ public class EventVoidMultitoolBlock {
 
             EntityPlayer player = event.getEntityPlayer();
 
-            EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(event.getWorld().getBlockState(pos).getBlock()));
+            ItemStack stack = event.getWorld().getBlockState(pos).getBlock().getPickBlock(event.getWorld().getBlockState(pos), null, event.getWorld(), pos, event.getEntityPlayer());
+
+            EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), stack);
             player.getEntityWorld().spawnEntity(item);
             event.getWorld().setBlockToAir(pos);
         }
