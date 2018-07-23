@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "OEO",
+    "FVW",
+    "OSO"
+  ],
+
+  "key":
+  {
+    "O":
+    {
+      "item": "lostpowers:obsidian_block_2"
+    },
+    "E":
+    {
+      "item": "lostpowers:primordial_energy"
+    },
+    "W":
+    {
+      "item": "lostpowers:primordial_water"
+    },
+    "F":
+    {
+      "item": "lostpowers:primordial_flame"
+    },
+    "S":
+    {
+      "item": "lostpowers:primordial_soul"
+    },
+    "V":
+    {
+      "item": "lostpowers:primordial_void"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:nether_star",
+    "count": 1
+  }
+}

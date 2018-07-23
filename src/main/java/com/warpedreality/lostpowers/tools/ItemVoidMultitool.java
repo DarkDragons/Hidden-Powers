@@ -1,5 +1,6 @@
 package com.warpedreality.lostpowers.tools;
 
+import com.warpedreality.lostpowers.Main;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,6 +14,6 @@ import java.util.List;
 
 public class ItemVoidMultitool extends ToolBase {
     public ItemVoidMultitool() {
-        super("void_multitool", -1, 0);
+        super("void_multitool", -1, 0, Main.tabLostPowers);
     }
 }

@@ -14,8 +14,6 @@ public class ModSmelting {
         newSmelting(Blocks.OBSIDIAN, new ItemStack(ModItems.OBSIDIAN_INGOT_0), 1.25F);
         newSmelting(ModBlocks.OBSIDIAN_BLOCK_1, new ItemStack(ModItems.OBSIDIAN_INGOT_1), 1.50F);
         newSmelting(ModBlocks.OBSIDIAN_BLOCK_2, new ItemStack(ModItems.OBSIDIAN_INGOT_2), 1.75F);
-        newSmelting(ModBlocks.OBSIDIAN_BLOCK_3, new ItemStack(ModItems.OBSIDIAN_INGOT_3), 2.00F);
-        newSmelting(ModBlocks.OBSIDIAN_BLOCK_4, new ItemStack(ModItems.OBSIDIAN_INGOT_4), 2.25F);
     }
 
     public static void newSmelting(Block input, ItemStack output, float xp) {

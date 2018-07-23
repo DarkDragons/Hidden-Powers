@@ -1,5 +1,6 @@
 package com.warpedreality.lostpowers.items;
 
+import com.warpedreality.lostpowers.Main;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -10,7 +11,7 @@ import net.minecraft.world.World;
 public class ItemPrimordialSoul extends ItemBase {
 
     public ItemPrimordialSoul() {
-        super("primordial_soul", CreativeTabs.REDSTONE);
+        super("primordial_soul", Main.tabLostPowers);
     }
 
     @Override

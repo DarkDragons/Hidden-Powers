@@ -3,22 +3,18 @@
 
   "pattern":
   [
-    "BSB",
-    "SPS",
-    "BSB"
+    "NSN",
+    "SSS",
+    "NSN"
   ],
 
   "key":
   {
-    "B":
-    {
-      "item": "minecraft:bedrock"
-    },
-    "P":
+    "S":
     {
       "item": "lostpowers:primordial_soul"
     },
-    "S":
+    "N":
     {
       "item": "minecraft:nether_star"
     }

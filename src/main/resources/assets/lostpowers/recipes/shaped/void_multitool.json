@@ -3,20 +3,20 @@
 
   "pattern":
   [
-    " VV",
-    " SV",
-    "S  "
+    " BN",
+    " BB",
+    "B  "
   ],
 
   "key":
   {
-    "V":
-    {
-      "item": "lostpowers:primordial_void"
-    },
-    "S":
+    "N":
     {
       "item": "minecraft:nether_star"
+    },
+    "B":
+    {
+      "item": "minecraft:bedrock"
     }
   },
 

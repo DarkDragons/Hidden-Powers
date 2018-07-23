@@ -1,5 +1,6 @@
 package com.warpedreality.lostpowers.items;
 
+import com.warpedreality.lostpowers.Main;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -11,7 +12,7 @@ import net.minecraft.world.World;
 public class ItemPrimordialVoid extends ItemBase {
 
     public ItemPrimordialVoid() {
-        super("primordial_void", CreativeTabs.REDSTONE);
+        super("primordial_void", Main.tabLostPowers);
     }
 
     @Override

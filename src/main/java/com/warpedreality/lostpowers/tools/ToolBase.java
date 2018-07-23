@@ -11,12 +11,12 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class ToolBase extends ItemTool implements IHasModel {
 
-    public ToolBase(String name, int durablility, int damage) {
+    public ToolBase(String name, int durablility, int damage, CreativeTabs tab) {
         super(EnumHelper.addToolMaterial(name + "_material", 0, durablility, 0, damage, 0), Sets.newHashSet(new Block[] {}));
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(Main.tabLostPowers);
+        setCreativeTab(tab);
 
         //register(this);
         ModTools.TOOLS.add(this);

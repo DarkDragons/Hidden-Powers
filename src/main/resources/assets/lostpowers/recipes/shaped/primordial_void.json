@@ -3,20 +3,20 @@
 
   "pattern":
   [
-    "BBB",
-    "BSB",
-    "BBB"
+    "OOO",
+    "OSO",
+    "OOO"
   ],
 
   "key":
   {
-    "B":
+    "O":
     {
-      "item": "minecraft:bedrock"
+      "item": "lostpowers:obsidian_block_2"
     },
     "S":
     {
-      "item": "minecraft:nether_star"
+      "item": "lostpowers:primordial_soul"
     }
   },
 

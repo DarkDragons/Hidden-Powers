@@ -11,6 +11,7 @@ import java.io.File;
 import static com.warpedreality.lostpowers.proxy.CommonProxy.config;
 
 public class Config {
+    // Config Not currently used
     private static final String CATEGORY_GENERAL = "general";
     private static final String CATEGORY_TOOL = "tool";
 

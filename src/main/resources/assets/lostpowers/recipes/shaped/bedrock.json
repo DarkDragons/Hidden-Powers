@@ -4,7 +4,7 @@
 	"pattern":
 	[
 		"OOO",
-		"OOO",
+		"ONO",
 		"OOO"
 	],
 	"key":
@@ -12,12 +12,16 @@
 		"O":
 		{
 			"item": "lostpowers:obsidian_block_2"
+		},
+		"N":
+		{
+			"item": "lostpowers:primordial_void"
 		}
     },
 
 	"result":
 	{
-		"item": "lostpowers:obsidian_block_3",
+		"item": "minecraft:bedrock",
 		"count": 1
 	}
 }
