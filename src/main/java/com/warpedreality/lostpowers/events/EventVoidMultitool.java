@@ -4,6 +4,7 @@ import com.warpedreality.lostpowers.init.ModItems;
 import com.warpedreality.lostpowers.init.ModTools;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.item.EntityItem;
@@ -50,21 +51,21 @@ public class EventVoidMultitool {
                     player.getEntityWorld().spawnEntity(item);
                     item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_WATER, 1));
                     player.getEntityWorld().spawnEntity(item);
-                    ((EntityEnderman) event.getEntity()).setHealth(0);
+                    ((EntityLiving) event.getEntity()).setHealth(0);
                 } else if (event.getEntity() instanceof EntityBlaze) {
                     BlockPos pos = event.getEntity().getPosition();
                     EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL, 1));
                     player.getEntityWorld().spawnEntity(item);
                     item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_FLAME, 1));
                     player.getEntityWorld().spawnEntity(item);
-                    ((EntityEnderman) event.getEntity()).setHealth(0);
+                    ((EntityBlaze) event.getEntity()).setHealth(0);
                 } else if (event.getEntity() instanceof EntityCreeper) {
                     BlockPos pos = event.getEntity().getPosition();
                     EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL, 1));
                     player.getEntityWorld().spawnEntity(item);
                     item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_ENERGY, 1));
                     player.getEntityWorld().spawnEntity(item);
-                    ((EntityEnderman) event.getEntity()).setHealth(0);
+                    ((EntityCreeper) event.getEntity()).setHealth(0);
                 } else if (event.getEntity() instanceof EntityLiving){
                     BlockPos pos = event.getEntity().getPosition();
                     EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL, 1));
