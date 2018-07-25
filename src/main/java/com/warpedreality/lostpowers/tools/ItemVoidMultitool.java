@@ -2,13 +2,11 @@ package com.warpedreality.lostpowers.tools;
 
 import com.google.common.collect.Multimap;
 import com.warpedreality.lostpowers.Main;
-import com.warpedreality.lostpowers.init.ModTools;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
-import scala.collection.mutable.MultiMap;
 
 import java.util.Collection;
 import java.util.Optional;

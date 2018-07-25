@@ -10,6 +10,7 @@ import com.warpedreality.lostpowers.utils.Utils;
 import com.warpedreality.lostpowers.utils.handlers.EventHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -27,12 +28,16 @@ public class Main {
     @Mod.Instance
     public static Main instance;
 
+    public static boolean isDELoaded;
+
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent event) {
         Utils.log().info("Pre Initialization");
+
+        isDELoaded = Loader.isModLoaded("draconicevolution");
 
         Utils.log().info("Setting Mod Metadata...");
         ModMetadata modMetadata = event.getModMetadata();
