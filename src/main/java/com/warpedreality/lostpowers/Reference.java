@@ -10,7 +10,7 @@ public class Reference {
             NAME = "Lost Powers",
             DESC = "Adds a mechanism to get Bedrock, More Health and More!",
             CREDITS = "Thank you Loremaster for your amazing tutorials",
-            VERSION = "1.2",
+            VERSION = "1.3",
             ACCEPTED_VERSIONS = "1.12.2";
     public static final List<String> AUTHOR = Arrays.asList(new String[] { "WarpedReality" });
 
