@@ -10,30 +10,47 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Config(modid = ModRef.MODID)
 @Config.LangKey("lostPowers.config.title")
 public class ModConf {
-    // This values below you can access elsewhere in your mod:
-    @Config.Comment("Is The Ender Tier Powered By FE/RF or not? (Requires a mod for power generation)")
-    //@Config.RequiresWorldRestart
-    public static boolean poweredByFE = false;
 
-    // Ender Global
-    @Config.Comment("The Max Energy Capacity for the Ender Tier Items (Requires poweredByFE to be True)")
-    public static int enderEnergyMax = Integer.MAX_VALUE;
-    @Config.Comment("The Max Energy Input for the Ender Tier Items (Requires poweredByFE to be True)")
-    public static int enderEnergyIn = Integer.MAX_VALUE / 10;
+    @Config.LangKey("lostPowers.config.general")
+    public static General general = new General();
+    @Config.LangKey("lostPowers.config.enderstaff")
+    public static EnderStaff enderStaff = new EnderStaff();
+    @Config.LangKey("lostPowers.config.soul")
+    public static Soul soul = new Soul();
 
-    // Ender Staff
-    @Config.Comment("The Energy Per Use on an Entity for the Ender Staff (Requires poweredByFE to be True)")
-    public static int enderStaffEnergyPerUseEntity = Integer.MAX_VALUE / 1000;
-    @Config.Comment("The Energy Per Use on an Boss Entity (Dragon, Wither) for the Ender Staff (Requires poweredByFE to be True)")
-    public static int enderStaffEnergyPerUseEntityBoss = enderStaffEnergyPerUseEntity * 2;
-    @Config.Comment("The Energy Per Use on an Block for the Ender Staff (Requires poweredByFE to be True)")
-    public static int enderStaffEnergyPerUseBlock = Integer.MAX_VALUE / 1400;
-    @Config.Comment("The Energy Per Use on an Boss Block (Bedrock and eventually modded blocks) for the Ender Staff (Requires poweredByFE to be True)")
-    public static int enderStaffEnergyPerUseBlockBoss = Integer.MAX_VALUE / 1150;
 
-    // Ender Bow
-    @Config.Comment("The Energy Per Use on an Entity for the Ender Bow (Requires poweredByFE to be True)")
-    public static int enderStaffEnergyPerUseEntityRange = Integer.MAX_VALUE / 625;
+    public static class General {
+        @Config.Comment("Is The Ender Tier Powered By FE/RF or not? (Requires a mod for power generation)")
+        public boolean poweredByFE = false;
+        @Config.Comment("The Max Energy Capacity for the Ender Tier Items (Requires poweredByFE to be True)")
+        public int enderEnergyMax = Integer.MAX_VALUE;
+        @Config.Comment("The Max Energy Input for the Ender Tier Items (Requires poweredByFE to be True)")
+        public int enderEnergyIn = Integer.MAX_VALUE / 10;
+    }
+
+    public static class EnderStaff {
+        @Config.Comment("The Energy Per Use on an Entity for the Ender Staff (Ineffective unless poweredByFE is True)")
+        public int enderStaffEnergyPerUseEntity = Integer.MAX_VALUE / 1000;
+        @Config.Comment("The Energy Per Use on an Boss Entity (Dragon, Wither) for the Ender Staff (Ineffective unless poweredByFE is True)")
+        public int enderStaffEnergyPerUseEntityBoss = enderStaffEnergyPerUseEntity * 2;
+        @Config.Comment("The Energy Per Use on an Block for the Ender Staff (Ineffective unless poweredByFE is True)")
+        public int enderStaffEnergyPerUseBlock = Integer.MAX_VALUE / 1400;
+        @Config.Comment("The Energy Per Use on an Boss Block (Bedrock and eventually modded blocks) for the Ender Staff (Ineffective unless poweredByFE is True)")
+        public int enderStaffEnergyPerUseBlockBoss = Integer.MAX_VALUE / 1150;
+        @Config.Comment("The Energy Per Use on an Entity for the Ender Bow (Ineffective unless poweredByFE is True)")
+        public int enderStaffEnergyPerUseEntityRange = Integer.MAX_VALUE / 625;
+        @Config.Comment("The amount of damage the Void Fragments do when shot from the Ender Staff")
+        public int enderStaffVoidFragmentDamage = 100;
+    }
+
+    public static class Soul {
+        @Config.Comment("The amount of health the Soul heals")
+        public int soulHealHealth = 2;
+        @Config.Comment("The amount of hunger the Soul heals")
+        public int soulHealHunger = 2;
+        @Config.Comment("The amount of bonus health the Soul Capsule gives")
+        public int soulCapuleBonus = 4;
+    }
 
     @Mod.EventBusSubscriber(modid = ModRef.MODID)
     private static class EventHandler {
@@ -56,31 +73,31 @@ public class ModConf {
 
 
 /*
-    private static final String CATEGORY_GENERAL = "general";
-    private static final String CATEGORY_ENDER_STAFF = "enderStaff";
-    private static final String CATEGORY_ENDER_BOW = "enderBow";
+    private  final String CATEGORY_GENERAL = "general";
+    private  final String CATEGORY_ENDER_STAFF = "enderStaff";
+    private  final String CATEGORY_ENDER_BOW = "enderBow";
 
     // This values below you can access elsewhere in your mod:
-    public static boolean poweredByFE = false;
+    public  boolean poweredByFE = false;
 
     // Ender Global
-    public static int enderEnergyMax = Integer.MAX_VALUE;
-    public static int enderEnergyIn = Integer.MAX_VALUE / 10;
+    public  int enderEnergyMax = Integer.MAX_VALUE;
+    public  int enderEnergyIn = Integer.MAX_VALUE / 10;
 
     // Ender Staff
-    public static int enderStaffEnergyPerUseEntity = Integer.MAX_VALUE / 1000;
-    public static int enderStaffEnergyPerUseEntityBoss = enderStaffEnergyPerUseEntity * 2;
-    public static int enderStaffEnergyPerUseBlock = Integer.MAX_VALUE / 1400;
-    public static int enderStaffEnergyPerUseBlockBoss = Integer.MAX_VALUE / 1150;
+    public  int enderStaffEnergyPerUseEntity = Integer.MAX_VALUE / 1000;
+    public  int enderStaffEnergyPerUseEntityBoss = enderStaffEnergyPerUseEntity * 2;
+    public  int enderStaffEnergyPerUseBlock = Integer.MAX_VALUE / 1400;
+    public  int enderStaffEnergyPerUseBlockBoss = Integer.MAX_VALUE / 1150;
 
     // Ender Bow
-    public static int enderStaffEnergyPerUseEntityRange = 30000;
-    public static int enderBowEnergyPerUseBoss = 75000;
+    public  int enderStaffEnergyPerUseEntityRange = 30000;
+    public  int enderBowEnergyPerUseBoss = 75000;
 
 
     // Call this from CommonProxy.preInit(). It will create our config if it doesn't
     // exist yet and read the values if it does exist.
-    public static void readConfig() {
+    public  void readConfig() {
         Configuration cfg = config;
         try {
             cfg.load();
@@ -95,7 +112,7 @@ public class ModConf {
         }
     }
 
-    private static void initGeneralConfig(Configuration cfg) {
+    private  void initGeneralConfig(Configuration cfg) {
         // cfg.getFoo() will get the value in the config if it is already specified there
         // It will create the value if it is not there
 
@@ -119,17 +136,17 @@ public class ModConf {
         enderBowEnergyPerUseBoss = cfg.getInt("enderBowEnergyPerUseBoss", CATEGORY_ENDER_BOW, enderBowEnergyPerUseBoss, 1, Integer.MAX_VALUE, "The energy per use on a boss for the Ender Bow");
     }
 
-    public static void PreInit(FMLPreInitializationEvent event) {
+    public  void PreInit(FMLPreInitializationEvent event) {
         File directory = event.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "lost-powers.cfg"));
         ModConf.readConfig();
     }
 
-    public static void Init(FMLInitializationEvent event) {
+    public  void Init(FMLInitializationEvent event) {
 
     }
 
-    public static void PostInit(FMLPostInitializationEvent event) {
+    public  void PostInit(FMLPostInitializationEvent event) {
         if (config.hasChanged()) {
             config.save();
         }

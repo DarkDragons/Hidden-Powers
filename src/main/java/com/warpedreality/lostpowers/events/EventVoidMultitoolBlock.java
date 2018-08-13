@@ -17,10 +17,10 @@ public class EventVoidMultitoolBlock {
     public void onPlayerInteract(PlayerInteractEvent.LeftClickBlock event) {
         if (event.getEntityPlayer().getHeldItemMainhand().getItem() == ModItems.ENDER_STAFF) {
             boolean isCreativeMode = event.getEntityPlayer().capabilities.isCreativeMode;
-            if (!isCreativeMode && ModConf.poweredByFE) {
+            if (!isCreativeMode && ModConf.general.poweredByFE) {
                     ItemStack stackStaff = event.getEntityPlayer().getHeldItemMainhand();
                     if (event.getWorld().getBlockState(event.getPos()).getBlock() == Blocks.BEDROCK) {
-                        if (Utils.getEnergy(event.getItemStack()) - ModConf.enderStaffEnergyPerUseBlockBoss > 0) {
+                        if (Utils.getEnergy(event.getItemStack()) - ModConf.enderStaff.enderStaffEnergyPerUseBlockBoss > 0) {
                             BlockPos pos = event.getPos();
 
                             EntityPlayer player = event.getEntityPlayer();
@@ -32,10 +32,10 @@ public class EventVoidMultitoolBlock {
                             if (!event.getWorld().isRemote)
                                 player.getEntityWorld().spawnEntity(item);
 
-                            Utils.useEnergy(ModConf.enderStaffEnergyPerUseBlockBoss, stackStaff);
+                            Utils.useEnergy(ModConf.enderStaff.enderStaffEnergyPerUseBlockBoss, stackStaff);
                             event.getWorld().setBlockToAir(pos);
                         }
-                    } else if (Utils.getEnergy(event.getItemStack()) - ModConf.enderStaffEnergyPerUseBlock > 0) {
+                    } else if (Utils.getEnergy(event.getItemStack()) - ModConf.enderStaff.enderStaffEnergyPerUseBlock > 0) {
                         BlockPos pos = event.getPos();
 
                         EntityPlayer player = event.getEntityPlayer();
@@ -47,7 +47,7 @@ public class EventVoidMultitoolBlock {
                         if (!event.getWorld().isRemote)
                             player.getEntityWorld().spawnEntity(item);
 
-                        Utils.useEnergy(ModConf.enderStaffEnergyPerUseBlock, stackStaff);
+                        Utils.useEnergy(ModConf.enderStaff.enderStaffEnergyPerUseBlock, stackStaff);
                         event.getWorld().setBlockToAir(pos);
                     }
             } else if (!isCreativeMode) {

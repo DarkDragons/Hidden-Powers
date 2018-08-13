@@ -1,5 +1,6 @@
 package com.warpedreality.lostpowers.items;
 
+import com.warpedreality.lostpowers.ModConf;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -7,9 +8,9 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
-public class ItemPrimordialSoul extends ItemBase {
+public class ItemSoul extends ItemBase {
 
-    public ItemPrimordialSoul(String name, CreativeTabs tab) {
+    public ItemSoul(String name, CreativeTabs tab) {
         super(name, tab);
     }
 
@@ -17,11 +18,11 @@ public class ItemPrimordialSoul extends ItemBase {
     public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
         if (player.getHealth() < player.getMaxHealth() || player.getFoodStats().getFoodLevel() < 20) {
             if (player.getHealth() < player.getMaxHealth()) {
-                player.heal(2);
+                player.heal(ModConf.soul.soulHealHealth);
             }
 
             if (player.getFoodStats().getFoodLevel() < 20) {
-                player.getFoodStats().setFoodLevel(player.getFoodStats().getFoodLevel() + 1);
+                player.getFoodStats().setFoodLevel(player.getFoodStats().getFoodLevel() + ModConf.soul.soulHealHunger);
             }
 
             player.getHeldItem(hand).shrink(1);

@@ -41,6 +41,7 @@ item.primordial_flame.name=Toasty Flame
 item.primordial_energy.name=Clean Energy
 item.primordial_water.name=Purified Water
 item.soul.name=Soul
+item.soul_fragment.name=Soul Fragment
 item.void_chunk.name=Void Chunk
 item.void_fragment.name=Void Fragment
 

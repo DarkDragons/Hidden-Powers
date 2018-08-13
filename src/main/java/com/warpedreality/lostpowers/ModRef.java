@@ -10,7 +10,7 @@ public class ModRef {
             NAME = "Lost Powers",
             DESC = "Adds a mechanism to get Bedrock, More Health and More!",
             CREDITS = "Thank you Loremaster for your amazing tutorials",
-            VERSION = "2.0",
+            VERSION = "2.1",
             ACCEPTED_VERSIONS = "1.12.2";
     public static final List<String> AUTHOR = Arrays.asList(new String[] { "WarpedReality" });
 

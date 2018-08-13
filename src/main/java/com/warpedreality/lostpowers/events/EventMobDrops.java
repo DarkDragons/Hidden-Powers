@@ -23,16 +23,22 @@ public class EventMobDrops {
 
                 if (event.getEntity() instanceof EntityGuardian || event.getEntity() instanceof EntityElderGuardian) {
                     BlockPos pos = event.getEntity().getPosition();
-                    EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_WATER, 1));
-                    player.getEntityWorld().spawnEntity(item);
+                    EntityItem item1 = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_WATER, 1));
+                    player.getEntityWorld().spawnEntity(item1);
+                    EntityItem item2 = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL_FRAGMENT, 1));
+                    player.getEntityWorld().spawnEntity(item2);
                 } else if (event.getEntity() instanceof EntityBlaze) {
                     BlockPos pos = event.getEntity().getPosition();
-                    EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_FLAME, 1));
-                    player.getEntityWorld().spawnEntity(item);
+                    EntityItem item1 = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_FLAME, 1));
+                    player.getEntityWorld().spawnEntity(item1);
+                    EntityItem item2 = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL_FRAGMENT, 1));
+                    player.getEntityWorld().spawnEntity(item2);
                 } else if (event.getEntity() instanceof EntityCreeper) {
                     BlockPos pos = event.getEntity().getPosition();
-                    EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_ENERGY, 1));
-                    player.getEntityWorld().spawnEntity(item);
+                    EntityItem item1 = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_ENERGY, 1));
+                    player.getEntityWorld().spawnEntity(item1);
+                    EntityItem item2 = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL_FRAGMENT, 1));
+                    player.getEntityWorld().spawnEntity(item2);
                 }
             }
         }

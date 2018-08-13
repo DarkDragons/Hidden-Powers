@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+    {
+      "item": "lostpowers:soul_fragment"
+    },
+    {
+      "item": "lostpowers:soul_fragment"
+    },
+    {
+      "item": "lostpowers:soul_fragment"
+    },
+    {
+      "item": "lostpowers:soul_fragment"
+    },
+    {
+      "item": "lostpowers:soul_fragment"
+    },
+    {
+      "item": "lostpowers:soul_fragment"
+    },
+    {
+      "item": "lostpowers:soul_fragment"
+    },
+    {
+      "item": "lostpowers:soul_fragment"
+    },
+    {
+      "item": "lostpowers:soul_fragment"
+    }
+  ],
+
+  "result":
+  {
+    "item": "lostpowers:soul",
+    "count": 1
+  }
+}

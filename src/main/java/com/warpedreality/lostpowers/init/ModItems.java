@@ -2,7 +2,7 @@ package com.warpedreality.lostpowers.init;
 
 import com.warpedreality.lostpowers.Main;
 import com.warpedreality.lostpowers.items.ItemBase;
-import com.warpedreality.lostpowers.items.ItemPrimordialSoul;
+import com.warpedreality.lostpowers.items.ItemSoul;
 import com.warpedreality.lostpowers.items.ItemSoulCapsule;
 import com.warpedreality.lostpowers.items.ItemVoidFragment;
 import com.warpedreality.lostpowers.items.tools.*;
@@ -24,7 +24,8 @@ public class ModItems {
     public static final Item PRIMORDIAL_FLAME = new ItemBase("primordial_flame", Main.tabLostPowers);
     public static final Item PRIMORDIAL_ENERGY = new ItemBase("primordial_energy", Main.tabLostPowers);
     public static final Item PRIMORDIAL_WATER = new ItemBase("primordial_water", Main.tabLostPowers);
-    public static final Item PRIMORDIAL_SOUL = new ItemPrimordialSoul("soul", Main.tabLostPowers);
+    public static final Item PRIMORDIAL_SOUL = new ItemSoul("soul", Main.tabLostPowers);
+    public static final Item PRIMORDIAL_SOUL_FRAGMENT = new ItemVoidFragment("soul_fragment", Main.tabLostPowers);
     public static final Item PRIMORDIAL_VOID = new ItemBase("void_chunk", Main.tabLostPowers);
     public static final Item PRIMORDIAL_VOID_FRAGMENT = new ItemVoidFragment("void_fragment", Main.tabLostPowers);
 
@@ -58,5 +59,5 @@ public class ModItems {
     public static final ItemSword OBSIDIAN_SWORD_2 = new ItemToolSwordBase("obsidian_sword_2", Main.tabLostPowers, 6, 2800, 18, 13f, 26);
 
     // Special
-    public static final Item ENDER_STAFF = new ItemEnderStaff();
+    public static final Item ENDER_STAFF = new ItemToolEnderStaff();
 }

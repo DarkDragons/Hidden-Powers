@@ -50,7 +50,7 @@ public class ItemEnergyBase extends Item implements IHasModel {
 
     @Override
     public double getDurabilityForDisplay(ItemStack stack) {
-        if (ModConf.poweredByFE) {
+        if (ModConf.general.poweredByFE) {
             IEnergyStorage energy = stack.getCapability(CapabilityEnergy.ENERGY, null);
             return 1D - ((double) energy.getEnergyStored() / (double) energy.getMaxEnergyStored());
         } else {
@@ -61,7 +61,7 @@ public class ItemEnergyBase extends Item implements IHasModel {
 
     @Override
     public int getRGBDurabilityForDisplay(ItemStack stack) {
-        if (ModConf.poweredByFE) {
+        if (ModConf.general.poweredByFE) {
             IEnergyStorage energy = stack.getCapability(CapabilityEnergy.ENERGY, null);
             return MathHelper.hsvToRGB(Math.max(0.0F, (float) energy.getEnergyStored() / (float) energy.getMaxEnergyStored()) / 3.0F, 1.0F, 1.0F);
         } else {
@@ -72,7 +72,7 @@ public class ItemEnergyBase extends Item implements IHasModel {
 
     @Override
     public boolean showDurabilityBar(ItemStack stack) {
-        if (ModConf.poweredByFE) {
+        if (ModConf.general.poweredByFE) {
             IEnergyStorage energy = stack.getCapability(CapabilityEnergy.ENERGY, null);
             return energy.getEnergyStored() != energy.getMaxEnergyStored();
         } else {
@@ -84,7 +84,7 @@ public class ItemEnergyBase extends Item implements IHasModel {
     public void addInformation(ItemStack stack, World player, List<String> list, ITooltipFlag b) {
         //Add tool information to the tooltip
         super.addInformation(stack, player, list, b);
-        if (ModConf.poweredByFE) {
+        if (ModConf.general.poweredByFE) {
             IEnergyStorage energy = stack.getCapability(CapabilityEnergy.ENERGY, null);
             list.add(energy.getEnergyStored() + "/" + energy.getMaxEnergyStored() + " FE");
             list.add("FE (Forge Energy) is the same as RF (Redstone Flux)");
