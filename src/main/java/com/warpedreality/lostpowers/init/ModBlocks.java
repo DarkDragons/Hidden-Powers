@@ -5,7 +5,6 @@ import com.warpedreality.lostpowers.blocks.BlockBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 import java.util.ArrayList;
 import java.util.List;

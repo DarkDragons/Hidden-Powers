@@ -1,8 +1,6 @@
 package com.warpedreality.lostpowers.events;
 
 import com.warpedreality.lostpowers.init.ModItems;
-import com.warpedreality.lostpowers.init.ModTools;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.monster.EntityCreeper;
@@ -21,7 +19,7 @@ public class EventMobDrops {
         if (event.getSource().getTrueSource() instanceof EntityPlayer) {
             EntityPlayer player = (EntityPlayer) event.getSource().getTrueSource();
 
-            if (player.getHeldItemMainhand().getItem() != ModTools.VOID_MULTITOOL) {
+            if (player.getHeldItemMainhand().getItem() != ModItems.ENDER_STAFF) {
 
                 if (event.getEntity() instanceof EntityGuardian || event.getEntity() instanceof EntityElderGuardian) {
                     BlockPos pos = event.getEntity().getPosition();

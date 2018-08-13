@@ -2,7 +2,6 @@ package com.warpedreality.lostpowers.items;
 
 import com.warpedreality.lostpowers.Main;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
@@ -25,8 +24,11 @@ public class ItemSoulCapsule extends ItemBase {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
         IAttributeInstance maxHealth = player.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH);
-        maxHealth.applyModifier(new AttributeModifier("addHeart", +2, 0).setSaved(true));
-        player.getHeldItem(hand).shrink(1);
+
+        if (maxHealth.getAttributeValue() <= 238) {
+            maxHealth.applyModifier(new AttributeModifier("addHeart", +2, 0).setSaved(true));
+            player.getHeldItem(hand).shrink(1);
+        }
 
         return super.onItemRightClick(world, player, hand);
     }
@@ -34,6 +36,6 @@ public class ItemSoulCapsule extends ItemBase {
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         tooltip.add("Consuming this gives you an extra heart until you die");
-        tooltip.add("Stackable");
+        tooltip.add("A Maximum of 110 may be consumed per life");
     }
 }

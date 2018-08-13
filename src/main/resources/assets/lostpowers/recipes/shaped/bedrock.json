@@ -3,9 +3,9 @@
 
 	"pattern":
 	[
-		"OOO",
-		"ONO",
-		"OOO"
+		"VVV",
+		"VOV",
+		"VVV"
 	],
 	"key":
 	{
@@ -13,9 +13,9 @@
 		{
 			"item": "lostpowers:obsidian_block_2"
 		},
-		"N":
+		"V":
 		{
-			"item": "lostpowers:primordial_void"
+			"item": "lostpowers:void_chunk"
 		}
     },
 

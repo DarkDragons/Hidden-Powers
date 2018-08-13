@@ -16,13 +16,13 @@
     },
     "S":
     {
-      "item": "lostpowers:primordial_soul"
+      "item": "lostpowers:soul"
     }
   },
 
   "result":
   {
-    "item": "lostpowers:primordial_void",
+    "item": "lostpowers:void_chunk",
     "count": 1
   }
 }

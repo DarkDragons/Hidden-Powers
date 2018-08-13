@@ -1,8 +1,8 @@
 package com.warpedreality.lostpowers.items;
 
 import com.warpedreality.lostpowers.Main;
-import com.warpedreality.lostpowers.init.ModItems;
 import com.warpedreality.lostpowers.utils.IHasModel;
+import com.warpedreality.lostpowers.utils.RegistryHelper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -12,7 +12,7 @@ public class ItemBase extends Item implements IHasModel {
         setRegistryName(name);
         setCreativeTab(tab);
 
-        ModItems.ITEMS.add(this);
+        RegistryHelper.registerItem(this);
     }
 
     @Override

@@ -3,16 +3,16 @@
 
   "pattern":
   [
-    "OEO",
+    "BEB",
     "FVW",
-    "OSO"
+    "BSB"
   ],
 
   "key":
   {
-    "O":
+    "B":
     {
-      "item": "lostpowers:obsidian_block_2"
+      "item": "minecraft:bedrock"
     },
     "E":
     {
@@ -28,11 +28,11 @@
     },
     "S":
     {
-      "item": "lostpowers:primordial_soul"
+      "item": "lostpowers:soul"
     },
     "V":
     {
-      "item": "lostpowers:primordial_void"
+      "item": "lostpowers:void_chunk"
     }
   },
 

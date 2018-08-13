@@ -4,13 +4,13 @@
   "ingredients":
   [
     {
-      "item": "lostpowers:obsidian_block_1"
+      "item": "lostpowers:void_chunk"
     }
   ],
 
   "result":
   {
-    "item": "minecraft:obsidian",
-    "count": 9
+    "item": "lostpowers:void_fragment",
+    "count": 6
   }
 }

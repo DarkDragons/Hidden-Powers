@@ -1,22 +1,22 @@
-package com.warpedreality.lostpowers.tools;
+package com.warpedreality.lostpowers.items.tools;
 
 import com.warpedreality.lostpowers.Main;
-import com.warpedreality.lostpowers.init.ModTools;
 import com.warpedreality.lostpowers.utils.IHasModel;
+import com.warpedreality.lostpowers.utils.RegistryHelper;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemHoe;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ToolAxeBase extends ItemAxe implements IHasModel {
+public class ItemToolHoeBase extends ItemHoe implements IHasModel {
 
-    public ToolAxeBase(String name, CreativeTabs tab, int lvl, int durablility, int speed, float damage, int enchantability) {
+    public ItemToolHoeBase(String name, CreativeTabs tab, int lvl, int durablility, int speed, float damage, int enchantability) {
         super(EnumHelper.addToolMaterial(name + "_material", lvl, durablility, speed, damage, enchantability));
 
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(tab);
 
-        ModTools.TOOLS.add(this);
+        RegistryHelper.registerTool(this);
     }
 
     @Override

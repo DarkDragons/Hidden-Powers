@@ -3,14 +3,14 @@ package com.warpedreality.lostpowers;
 import java.util.Arrays;
 import java.util.List;
 
-public class Reference {
+public class ModRef {
     // Mod Info
     public static final String
             MODID = "lostpowers",
             NAME = "Lost Powers",
             DESC = "Adds a mechanism to get Bedrock, More Health and More!",
             CREDITS = "Thank you Loremaster for your amazing tutorials",
-            VERSION = "1.3",
+            VERSION = "2.0",
             ACCEPTED_VERSIONS = "1.12.2";
     public static final List<String> AUTHOR = Arrays.asList(new String[] { "WarpedReality" });
 

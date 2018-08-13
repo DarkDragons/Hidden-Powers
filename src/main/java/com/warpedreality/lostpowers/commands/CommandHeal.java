@@ -25,7 +25,7 @@ public class CommandHeal extends CommandBase {
     public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException
     {
         // Setting up variables
-        EntityPlayer player = null;
+        EntityPlayer player;
 
         if (args[1] == null) {
             player = getPlayer(server, sender, sender.getName());
@@ -33,13 +33,13 @@ public class CommandHeal extends CommandBase {
             player = getPlayer(server, sender, args[1]);
         }
 
-        IAttributeInstance maxhealth = player.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH);;
+        IAttributeInstance maxhealth = player.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH);
 
-        float current = player.getHealth();
-        float max = ((float) maxhealth.getAttributeValue());
-        float amount = max - current;
+        double current = player.getHealth();
+        double max = maxhealth.getAttributeValue();
+        double amount = max - current;
 
         // Healing the player
-        player.heal(amount);
+        player.heal((float) amount);
     }
 }
