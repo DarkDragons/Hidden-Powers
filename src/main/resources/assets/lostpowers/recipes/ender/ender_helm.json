@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BNB"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "minecraft:nether_star"
+    },
+    "B":
+    {
+      "item": "minecraft:bedrock"
+    }
+  },
+
+  "result":
+  {
+    "item": "lostpowers:ender_helm",
+    "count": 1
+  }
+}

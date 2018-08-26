@@ -1,6 +1,5 @@
 package com.warpedreality.lostpowers.items;
 
-import com.warpedreality.lostpowers.Main;
 import com.warpedreality.lostpowers.ModConf;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -19,7 +18,7 @@ import java.util.List;
 public class ItemSoulCapsule extends ItemBase {
 
     public ItemSoulCapsule() {
-        super("soul_capsule", Main.tabLostPowers);
+        super("soul_capsule");
     }
 
     @Override

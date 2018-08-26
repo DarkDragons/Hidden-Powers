@@ -32,8 +32,7 @@ item.obsidian_sword_0.name=Obsidian Sword
 item.obsidian_sword_1.name=Single Compressed Obsidian Sword
 item.obsidian_sword_2.name=Double Compressed Obsidian Sword
 
-# Magic!
-item.ender_staff.name=Ender Staff
+# Soul
 item.soul_capsule.name=Soul Capsule
 
 # Primordial
@@ -45,7 +44,18 @@ item.soul_fragment.name=Soul Fragment
 item.void_chunk.name=Void Chunk
 item.void_fragment.name=Void Fragment
 
+# Ender Tier
+item.ender_staff.name=Ender Staff
+item.ender_helm.name=Ender Helm
+item.ender_chestplate.name=Ender Chestplate
+item.ender_leggings.name=Ender Leggings
+item.ender_boots.name=Ender Boots
 
 itemGroup.lostpowers=Lost Powers
+effect.flight=Flight
 
 lostPowers.config.title=Lost Powers Config
+lostPowers.config.general=General
+lostPowers.config.enderStaff=Ender Staff
+lostPowers.config.enderArmor=Ender Armor
+lostPowers.config.soul=Soul

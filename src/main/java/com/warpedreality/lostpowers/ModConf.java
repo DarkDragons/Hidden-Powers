@@ -13,8 +13,10 @@ public class ModConf {
 
     @Config.LangKey("lostPowers.config.general")
     public static General general = new General();
-    @Config.LangKey("lostPowers.config.enderstaff")
+    @Config.LangKey("lostPowers.config.enderStaff")
     public static EnderStaff enderStaff = new EnderStaff();
+    @Config.LangKey("lostPowers.config.enderArmor")
+    public static EnderArmor enderArmor = new EnderArmor();
     @Config.LangKey("lostPowers.config.soul")
     public static Soul soul = new Soul();
 
@@ -41,6 +43,21 @@ public class ModConf {
         public int enderStaffEnergyPerUseEntityRange = Integer.MAX_VALUE / 625;
         @Config.Comment("The amount of damage the Void Fragments do when shot from the Ender Staff")
         public int enderStaffVoidFragmentDamage = 100;
+    }
+
+    public static class EnderArmor {
+        @Config.Comment("The Energy Used Per Hit on a Player wearing a full set of Ender Armor (Ineffective unless poweredByFE is True)")
+        public int baseEnergyPerHit = 858994;
+        @Config.Comment("The Energy Used Per Tick on a Player wearing the Ender Chestplate (Ineffective unless poweredByFE is True)")
+        public int passiveEnergyUsageHelm = 1000;
+        @Config.Comment("The Energy Used Per Tick on a Player wearing the Ender Chestplate (Ineffective unless poweredByFE is True)")
+        public int passiveEnergyUsageChestplate = 1000;
+        @Config.Comment("The Energy Used Per Tick on a Player wearing the Ender Chestplate (Ineffective unless poweredByFE is True)")
+        public int passiveEnergyUsageLeggings = 1000;
+        @Config.Comment("The Energy Used Per Tick on a Player wearing the Ender Chestplate (Ineffective unless poweredByFE is True)")
+        public int passiveEnergyUsageBoots = 1000;
+        @Config.Comment("The Energy Per Attack Multiplier (baseEnergyPerHit*attackEnergyDrainMultiplier)")
+        public int attackEnergyDrainMultiplier = 1;
     }
 
     public static class Soul {

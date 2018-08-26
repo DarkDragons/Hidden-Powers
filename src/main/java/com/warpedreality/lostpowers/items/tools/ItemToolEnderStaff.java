@@ -1,12 +1,11 @@
 package com.warpedreality.lostpowers.items.tools;
 
 import com.google.common.collect.Multimap;
-import com.warpedreality.lostpowers.Main;
 import com.warpedreality.lostpowers.ModConf;
 import com.warpedreality.lostpowers.init.ModItems;
 import com.warpedreality.lostpowers.items.ItemEnergyBase;
 import com.warpedreality.lostpowers.items.ItemVoidFragment;
-import com.warpedreality.lostpowers.utils.Utils;
+import com.warpedreality.lostpowers.utils.EnergyHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -40,7 +39,7 @@ public class ItemToolEnderStaff extends ItemEnergyBase {
     boolean isCreativeMode = false;
 
     public ItemToolEnderStaff() {
-        super("ender_staff", Main.tabLostPowers, ModConf.general.enderEnergyMax, ModConf.general.enderEnergyIn);
+        super("ender_staff", ModConf.general.enderEnergyMax, ModConf.general.enderEnergyIn);
 
         this.maxStackSize = 1;
         this.setMaxDamage(384);
@@ -78,19 +77,19 @@ public class ItemToolEnderStaff extends ItemEnergyBase {
         if (player.getHeldItemMainhand().getItem() == ModItems.ENDER_STAFF) {
             boolean isCreativeMode = player.capabilities.isCreativeMode;
             if (!isCreativeMode && ModConf.general.poweredByFE) {
-                if (Utils.getEnergy(stack) - ModConf.enderStaff.enderStaffEnergyPerUseEntity > 0) {
+                if (EnergyHelper.getEnergy(stack) - ModConf.enderStaff.enderStaffEnergyPerUseEntity > 0) {
                     if (entity instanceof EntityWither) {
                         BlockPos pos = entity.getPosition();
                         EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.NETHER_STAR, 1));
                         player.getEntityWorld().spawnEntity(item);
                     } else if (entity instanceof EntityDragon) {
-                        if (Utils.getEnergy(stack) - ModConf.enderStaff.enderStaffEnergyPerUseEntityBoss > 0) {
+                        if (EnergyHelper.getEnergy(stack) - ModConf.enderStaff.enderStaffEnergyPerUseEntityBoss > 0) {
                             BlockPos pos = entity.getPosition();
                             EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.NETHER_STAR, 4));
                             player.getEntityWorld().spawnEntity(item);
                             item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.ENDER_PEARL, 16));
                             player.getEntityWorld().spawnEntity(item);
-                            Utils.useEnergy(ModConf.enderStaff.enderStaffEnergyPerUseEntityBoss - ModConf.enderStaff.enderStaffEnergyPerUseEntity, stack);
+                            EnergyHelper.useEnergy(ModConf.enderStaff.enderStaffEnergyPerUseEntityBoss - ModConf.enderStaff.enderStaffEnergyPerUseEntity, stack);
                         }
                     } else if (entity instanceof EntityEnderman) {
                         BlockPos pos = entity.getPosition();
@@ -125,7 +124,7 @@ public class ItemToolEnderStaff extends ItemEnergyBase {
                         EntityItem item = new EntityItem(player.getEntityWorld(), pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.PRIMORDIAL_SOUL, 1));
                         player.getEntityWorld().spawnEntity(item);
                     }
-                    Utils.useEnergy(ModConf.enderStaff.enderStaffEnergyPerUseEntity, stack);
+                    EnergyHelper.useEnergy(ModConf.enderStaff.enderStaffEnergyPerUseEntity, stack);
                     entity.setDead();
                 }
             }
@@ -281,13 +280,13 @@ public class ItemToolEnderStaff extends ItemEnergyBase {
                 entityarrow.setDamage(arrowDamage);
 
                 if (!isCreativeMode && ModConf.general.poweredByFE) {
-                    if (Utils.getEnergy(stackStaff) - ModConf.enderStaff.enderStaffEnergyPerUseEntityRange > 0) {
+                    if (EnergyHelper.getEnergy(stackStaff) - ModConf.enderStaff.enderStaffEnergyPerUseEntityRange > 0) {
                         if (!worldIn.isRemote)
                         {
                             worldIn.spawnEntity(entityarrow);
                         }
 
-                        Utils.useEnergy(ModConf.enderStaff.enderStaffEnergyPerUseEntityRange, stackStaff);
+                        EnergyHelper.useEnergy(ModConf.enderStaff.enderStaffEnergyPerUseEntityRange, stackStaff);
                         ammo.shrink(1);
 
                         if (ammo.isEmpty())
@@ -448,7 +447,7 @@ private ItemStack findAmmo(EntityPlayer player) {
         ItemArrow itemarrow = (ItemArrow)(ammo.getItem() instanceof ItemArrow ? ammo.getItem() : Items.ARROW);
 
         if (!isCreativeMode && ModConf.poweredByFE) {
-            if (Utils.getEnergy(itemStack) - ModConf.enderStaffEnergyPerUseEntityRange > 0) {
+            if (EnergyHelper.getEnergy(itemStack) - ModConf.enderStaffEnergyPerUseEntityRange > 0) {
                 if (!world.isRemote)
                 {
                     EntityArrow entityarrow = itemarrow.createArrow(world, ammo, player);
@@ -460,7 +459,7 @@ private ItemStack findAmmo(EntityPlayer player) {
                     world.spawnEntity(entityarrow);
                 }
 
-                Utils.useEnergy(ModConf.enderStaffEnergyPerUseEntityRange, itemStack);
+                EnergyHelper.useEnergy(ModConf.enderStaffEnergyPerUseEntityRange, itemStack);
             }
         } else if (!isCreativeMode) {
             if (!world.isRemote)

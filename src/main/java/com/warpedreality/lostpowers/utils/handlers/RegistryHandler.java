@@ -16,6 +16,7 @@ public class RegistryHandler {
     public static void onItemRegister(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
         event.getRegistry().registerAll(ModItems.TOOLS.toArray(new Item[0]));
+        event.getRegistry().registerAll(ModItems.ARMOR.toArray(new Item[0]));
     }
 
     @SubscribeEvent
@@ -32,6 +33,12 @@ public class RegistryHandler {
         }
 
         for (Item item : ModItems.TOOLS) {
+            if (item instanceof IHasModel) {
+                ((IHasModel)item).registerModels();
+            }
+        }
+
+        for (Item item : ModItems.ARMOR) {
             if (item instanceof IHasModel) {
                 ((IHasModel)item).registerModels();
             }

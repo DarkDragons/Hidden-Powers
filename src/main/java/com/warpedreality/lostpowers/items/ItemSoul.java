@@ -1,7 +1,6 @@
 package com.warpedreality.lostpowers.items;
 
 import com.warpedreality.lostpowers.ModConf;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -10,8 +9,8 @@ import net.minecraft.world.World;
 
 public class ItemSoul extends ItemBase {
 
-    public ItemSoul(String name, CreativeTabs tab) {
-        super(name, tab);
+    public ItemSoul(String name) {
+        super(name);
     }
 
     @Override

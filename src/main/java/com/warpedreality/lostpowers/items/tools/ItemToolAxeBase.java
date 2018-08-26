@@ -6,7 +6,6 @@ import com.warpedreality.lostpowers.utils.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
@@ -17,8 +16,8 @@ public class ItemToolAxeBase extends ItemToolBase implements IHasModel {
 
     public static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE);
 
-    public ItemToolAxeBase(String name, CreativeTabs tab, int lvl, int durablility, int speed, float damage, int enchantability) {
-        super(name, EnumHelper.addToolMaterial(name + "_material", lvl, durablility, speed, damage, enchantability), EFFECTIVE_ON, tab);
+    public ItemToolAxeBase(String name, int lvl, int durablility, int speed, float damage, int enchantability) {
+        super(name, EnumHelper.addToolMaterial(name + "_material", lvl, durablility, speed, damage, enchantability), EFFECTIVE_ON);
 
         this.attackDamage = damage;
     }

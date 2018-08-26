@@ -3,12 +3,9 @@ package com.warpedreality.lostpowers.utils;
 import com.warpedreality.lostpowers.ModRef;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
-import net.minecraftforge.energy.CapabilityEnergy;
-import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,18 +22,6 @@ public class Utils {
             logger = LogManager.getFormatterLogger(ModRef.MODID);
         }
         return logger;
-    }
-
-    public static void useEnergy(int energyOut, ItemStack stack) {
-        IEnergyStorage energy = stack.getCapability(CapabilityEnergy.ENERGY, null);
-        if (energy.getEnergyStored() - energyOut > 0) {
-            energy.extractEnergy(energyOut, false);
-        }
-    }
-
-    public static int getEnergy(ItemStack stack) {
-        IEnergyStorage energy = stack.getCapability(CapabilityEnergy.ENERGY, null);
-        return energy.getEnergyStored();
     }
 
     /** Thanks to Jabelar!!! */

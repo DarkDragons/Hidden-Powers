@@ -1,6 +1,6 @@
 {
    "parent": "item/generated",
    "textures": {
-       "layer0": "lostpowers:items/ender/staff"
+       "layer0": "lostpowers:items/ender/leggings"
    }
 }

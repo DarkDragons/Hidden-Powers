@@ -1,4 +1,4 @@
-package com.warpedreality.lostpowers.items;
+package com.warpedreality.lostpowers.items.armor;
 
 import com.warpedreality.lostpowers.Main;
 import com.warpedreality.lostpowers.ModConf;
@@ -6,7 +6,8 @@ import com.warpedreality.lostpowers.utils.IHasModel;
 import com.warpedreality.lostpowers.utils.RegistryHelper;
 import com.warpedreality.lostpowers.utils.capabilities.CapabilityProviderEnergy;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.Item;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.math.MathHelper;
@@ -18,22 +19,30 @@ import net.minecraftforge.energy.IEnergyStorage;
 
 import java.util.List;
 
-public class ItemEnergyBase extends Item implements IHasModel {
+public class ItemEnergyArmorBase extends ItemArmor implements IHasModel {
     int maxEnergyCapacity;
     int maxEnergyIn;
     int maxEnergyOut;
     EnergyStorage storage;
 
-    public ItemEnergyBase(String name, int maxEnergyCapacity, int maxEnergyIn) {
+    public ItemEnergyArmorBase(String name, ArmorMaterial material, int renderIndex, EntityEquipmentSlot equipmentSlot, int maxEnergyCapacity, int maxEnergyIn) {
+        super(material, renderIndex, equipmentSlot);
         setUnlocalizedName(name);
         setRegistryName(name);
 
-        RegistryHelper.registerTool(this);
+        this.setMaxDamage(-1);
+
+        RegistryHelper.registerArmor(this);
 
         this.maxEnergyCapacity = maxEnergyCapacity;
         this.maxEnergyIn = maxEnergyIn;
         this.maxEnergyOut = 0;
         this.storage = new EnergyStorage(this.maxEnergyCapacity, this.maxEnergyIn, maxEnergyOut);
+    }
+
+    @Override
+    public boolean isDamageable() {
+        return false;
     }
 
     @Override
