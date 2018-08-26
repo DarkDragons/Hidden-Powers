@@ -9,8 +9,8 @@ public class ModRef {
             MODID = "lostpowers",
             NAME = "Lost Powers",
             DESC = "Adds a mechanism to get Bedrock, More Health and More!",
-            CREDITS = "Thank you Loremaster for your amazing tutorials",
-            VERSION = "2.1",
+            CREDITS = "Loremaster's amazing Minecraft Forge tutorials",
+            VERSION = "3.0",
             ACCEPTED_VERSIONS = "1.12.2";
     public static final List<String> AUTHOR = Arrays.asList(new String[] { "WarpedReality" });
 
