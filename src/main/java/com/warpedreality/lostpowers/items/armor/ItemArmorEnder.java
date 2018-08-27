@@ -50,15 +50,15 @@ public class ItemArmorEnder extends ItemEnergyArmorBase {
                 player.addPotionEffect(flight);
             }
         } else if (stack.getItem() == ModItems.ENDER_LEGGINGS) {
-            PotionEffect flight = new PotionEffect(ModEffects.POTION_FLIGHT, 80);
+            /*PotionEffect speed = new PotionEffect(Potion.getPotionFromResourceLocation("speed"), 80, 5);
             if (!isCreativeMode && ModConf.general.poweredByFE) {
                 if (EnergyHelper.getEnergy(stack) - ModConf.enderArmor.passiveEnergyUsageLeggings >= 0) {
                     EnergyHelper.useEnergy(ModConf.enderArmor.passiveEnergyUsageLeggings, stack);
-                    player.addPotionEffect(flight);
+                    player.addPotionEffect(speed);
                 }
             } else {
-                player.addPotionEffect(flight);
-            }
+                player.addPotionEffect(speed);
+            }*/
         } else if (stack.getItem() == ModItems.ENDER_BOOTS) {
             PotionEffect speed = new PotionEffect(Potion.getPotionFromResourceLocation("speed"), 80, 5);
             if (!isCreativeMode && ModConf.general.poweredByFE) {
