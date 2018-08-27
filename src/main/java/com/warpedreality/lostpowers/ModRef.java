@@ -10,7 +10,7 @@ public class ModRef {
             NAME = "Lost Powers",
             DESC = "Adds a mechanism to get Bedrock, More Health and More!",
             CREDITS = "Loremaster's amazing Minecraft Forge tutorials",
-            VERSION = "3.0",
+            VERSION = "3.1",
             ACCEPTED_VERSIONS = "1.12.2";
     public static final List<String> AUTHOR = Arrays.asList(new String[] { "WarpedReality" });
 
