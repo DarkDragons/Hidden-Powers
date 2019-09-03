@@ -1,0 +1,65 @@
+{
+  "_comment": "Obsidian Ingots",
+  "item.obsidian_ingot_0": "Obsidian Ingot",
+  "item.obsidian_ingot_1": "Single Compressed Obsidian Ingot",
+  "item.obsidian_ingot_2": "Double Compressed Obsidian Ingot",
+
+  "_comment": "Obsidian Blocks",
+  "block.compressed_obsidian_block_1": "Single Compressed Obsidian",
+  "block.compressed_obsidian_block_2": "Double Compressed Obsidian",
+  "block.compressed_obsidian_block_3": "Triple Compressed Obsidian",
+  "block.compressed_obsidian_block_4": "Quadruple Compressed Obsidian",
+
+  "_comment": "Obsidian Pickaxes",
+  "item.obsidian_pickaxe_0": "Obsidian Pickaxe",
+  "item.obsidian_pickaxe_1": "Single Compressed Obsidian Pickaxe",
+  "item.obsidian_pickaxe_2": "Double Compressed Obsidian Pickaxe",
+
+  "_comment": "Obsidian Axes",
+  "item.obsidian_axe_0": "Obsidian Axe",
+  "item.obsidian_axe_1": "Single Compressed Obsidian Axe",
+  "item.obsidian_axe_2": "Double Compressed Obsidian Axe",
+
+  "_comment": "Obsidian Shovels",
+  "item.obsidian_shovel_0": "Obsidian Shovel",
+  "item.obsidian_shovel_1": "Single Compressed Obsidian Shovel",
+  "item.obsidian_shovel_2": "Double Compressed Obsidian Shovel",
+
+  "_comment": "Obsidian Hoes",
+  "item.obsidian_hoe_0": "Obsidian Hoe",
+  "item.obsidian_hoe_1": "Single Compressed Obsidian Hoe",
+  "item.obsidian_hoe_2": "Double Compressed Obsidian Hoe",
+
+  "_comment": "Obsidian Swords",
+  "item.obsidian_sword_0": "Obsidian Sword",
+  "item.obsidian_sword_1": "Single Compressed Obsidian Sword",
+  "item.obsidian_sword_2": "Double Compressed Obsidian Sword",
+
+  "_comment": "Soul",
+  "item.soul_capsule": "Soul Capsule",
+
+  "_comment": "Primordial",
+  "item.primordial_flame": "Toasty Flame",
+  "item.primordial_energy": "Raw Energy",
+  "item.primordial_water": "Purified Water",
+  "item.soul": "Soul",
+  "item.soul_fragment": "Soul Fragment",
+  "item.void_chunk": "Void Chunk",
+  "item.void_fragment": "Void Fragment",
+
+  "_comment": "Ender Tier",
+  "item.ender_staff": "Ender Staff",
+  "item.ender_helm": "Ender Helm",
+  "item.ender_chestplate": "Ender Chestplate",
+  "item.ender_leggings": "Ender Leggings",
+  "item.ender_boots": "Ender Boots",
+
+  "itemGroup.eternalvoid": "Void's Mysteries",
+  "effect.flight": "Flight",
+
+  "voidsmysteries.config.title": "Void's Mysteries Config",
+  "voidsmysteries.config.general": "General",
+  "voidsmysteries.config.enderStaff": "Ender Staff",
+  "voidsmysteries.config.enderArmor": "Ender Armor",
+  "voidsmysteries.config.soul": "Soul"
+}
